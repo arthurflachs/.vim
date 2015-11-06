@@ -40,6 +40,10 @@ Plugin 'mxw/vim-jsx'
 Plugin 'mattn/emmet-vim'
 " }}}
 
+" CSS plugins ----------------------------------------------------- {{{
+Plugin 'groenewege/vim-less'
+" }}}
+
 call vundle#end()
 
 " }}}
