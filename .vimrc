@@ -38,6 +38,7 @@ Plugin 'mxw/vim-jsx'
 
 " HTML plugins ------------------------ {{{
 Plugin 'mattn/emmet-vim'
+Plugin 'lambdatoast/elm.vim'
 " }}}
 
 " CSS plugins ----------------------------------------------------- {{{
