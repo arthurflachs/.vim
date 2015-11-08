@@ -34,6 +34,7 @@ Plugin 'elzr/vim-json'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'flowtype/vim-flow'
 " }}}
 
 " HTML plugins ------------------------ {{{
