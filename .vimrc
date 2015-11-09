@@ -89,6 +89,14 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+" }}}
+
+" Vim abbrev lexical --------------------------{{{
+iabbrev instuctor instructor
+iabbrev instuctors instructors
 " }}}
 
 set expandtab
