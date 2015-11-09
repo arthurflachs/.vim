@@ -44,6 +44,7 @@ Plugin 'lambdatoast/elm.vim'
 
 " CSS plugins ----------------------------------------------------- {{{
 Plugin 'groenewege/vim-less'
+Plugin 'hail2u/vim-css3-syntax'
 " }}}
 
 call vundle#end()
