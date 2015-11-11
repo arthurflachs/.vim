@@ -34,7 +34,6 @@ Plugin 'elzr/vim-json'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'flowtype/vim-flow'
 " }}}
 
 " HTML plugins ------------------------ {{{
@@ -76,7 +75,6 @@ let g:jsx_ext_required = 0
 filetype plugin on
 filetype indent on
 
-set foldlevelstart=0
 set foldmethod=marker
 syntax enable
 
