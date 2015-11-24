@@ -46,6 +46,14 @@ Plugin 'groenewege/vim-less'
 Plugin 'hail2u/vim-css3-syntax'
 " }}}
 
+" IO plugins -------------- {{{
+Plugin 'andreimaxim/vim-io'
+" }}}
+
+" Prolog plugins ----------------- {{{
+Plugin 'adimit/prolog.vim'
+" }}}
+
 call vundle#end()
 
 " }}}
