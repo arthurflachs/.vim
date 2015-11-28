@@ -4,6 +4,9 @@ filetype off
 set wildignore+=*/node_modules/*
 set list
 
+" Set pl extension to prolog
+let g:filetype_pl="prolog"
+
 " Vundle -------------------------- {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
