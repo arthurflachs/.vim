@@ -35,7 +35,7 @@ Plugin 'elzr/vim-json'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'flowtype/vim-flow'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 " }}}
 
 " HTML plugins ------------------------ {{{
