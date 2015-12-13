@@ -4,6 +4,9 @@ filetype off
 set wildignore+=*/node_modules/*
 set list
 
+" Set pl extension to prolog
+let g:filetype_pl="prolog"
+
 " Vundle -------------------------- {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -48,6 +51,14 @@ Plugin 'groenewege/vim-less'
 Plugin 'hail2u/vim-css3-syntax'
 " }}}
 
+" IO plugins -------------- {{{
+Plugin 'andreimaxim/vim-io'
+" }}}
+
+" Prolog plugins ----------------- {{{
+Plugin 'adimit/prolog.vim'
+" }}}
+
 call vundle#end()
 
 " }}}
@@ -77,7 +88,6 @@ let g:jsx_ext_required = 0
 filetype plugin on
 filetype indent on
 
-set foldlevelstart=0
 set foldmethod=marker
 syntax enable
 
