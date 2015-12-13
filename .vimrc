@@ -19,6 +19,7 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
 " }}}
 
 " Git plugins -------------------- {{{
