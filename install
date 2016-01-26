@@ -1,0 +1,11 @@
+mkdir -pv bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+ln -siv $PWD/.vimrc ~/.vimrc
+ln -siv $PWD/.vim ~/.vim
+
+vim +PluginIstall +qall
+
+pushd $PWD/bundle/YouCompleteMe
+./install.py
+popd
