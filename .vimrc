@@ -127,3 +127,4 @@ set tabstop=4
 set autoindent
 set smartindent
 set wrap
+set wildignore+=**/node_modules
