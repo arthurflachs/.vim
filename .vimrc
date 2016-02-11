@@ -84,6 +84,7 @@ let g:syntastic_css_checkers = ['stylelint']
 
 " Localvimrc options ----------------------------- {{{
 let g:localvimrc_ask=0
+let g:localvimrc_sandbox=0
 " }}}
 
 " vim-jsx options ---------------------- {{{
