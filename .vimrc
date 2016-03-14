@@ -91,6 +91,12 @@ let g:jsx_ext_required = 0
 " HTML settings ---------------------- {{{
 " }}}
 
+" CTAGS mappings --------------------- {{{
+nnoremap <leader><leader> <C-]>
+nnoremap <leader><C-v> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+nnoremap <leader><BS> <C-t>
+" }}}
+
 
 filetype plugin on
 filetype indent on
