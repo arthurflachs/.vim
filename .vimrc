@@ -110,6 +110,7 @@ let mapleader = "\<Space>"
 
 inoremap <esc> <nop>
 inoremap jk <esc>
+inoremap kj <esc>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Up> <Nop>
