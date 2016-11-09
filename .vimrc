@@ -64,6 +64,10 @@ Plugin 'andreimaxim/vim-io'
 Plugin 'adimit/prolog.vim'
 " }}}
 
+" PHP plugins -------------------- {{{
+Plugin 'jwalton512/vim-blade'
+" }}}
+
 call vundle#end()
 
 " }}}
