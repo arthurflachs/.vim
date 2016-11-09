@@ -42,6 +42,10 @@ Plugin 'mxw/vim-jsx'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 " }}}
 
+" Typescript plugins ----------------- {{{
+Plugin 'leafgarland/typescript-vim'
+" }}}
+
 " HTML plugins ------------------------ {{{
 Plugin 'mattn/emmet-vim'
 Plugin 'lambdatoast/elm.vim'
