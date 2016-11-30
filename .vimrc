@@ -7,6 +7,8 @@ set list
 " Set pl extension to prolog
 let g:filetype_pl="prolog"
 
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute ", "trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
+
 " Vundle -------------------------- {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -25,6 +27,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-repeat'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 " }}}
 
 " Git plugins -------------------- {{{
@@ -45,11 +48,13 @@ Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " Typescript plugins ----------------- {{{
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 " }}}
 
 " HTML plugins ------------------------ {{{
 Plugin 'mattn/emmet-vim'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'indenthtml.vim'
 " }}}
 
 " CSS plugins ----------------------------------------------------- {{{
@@ -67,6 +72,7 @@ Plugin 'adimit/prolog.vim'
 
 " PHP plugins -------------------- {{{
 Plugin 'jwalton512/vim-blade'
+Plugin 'shawncplus/phpcomplete.vim'
 " }}}
 
 call vundle#end()
@@ -105,6 +111,11 @@ let g:jsx_ext_required = 0
 nnoremap <leader><leader> <C-]>
 nnoremap <leader><C-v> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 nnoremap <leader><BS> <C-t>
+" }}}
+
+" Indent Guides ----------------------- {{{
+hi IndentGuidesOdd ctermbg=black
+hi IndentGuidesEvent ctermbg=lightgrey
 " }}}
 
 
