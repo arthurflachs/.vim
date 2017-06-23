@@ -19,7 +19,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'embear/vim-localvimrc'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
+if !has('nvim')
+    Plugin 'Valloric/YouCompleteMe'
+else
+    Plugin 'Shougo/deoplete.nvim'
+    Plugin 'neomake/neomake'
+    Plugin 'benjie/neomake-local-eslint.vim'
+endif
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
