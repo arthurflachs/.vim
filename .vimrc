@@ -32,6 +32,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-repeat'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 " }}}
@@ -130,6 +131,9 @@ filetype indent on
 
 set foldmethod=marker
 syntax enable
+
+set background=dark
+colorscheme solarized
 
 " Vim basic mappings ---------------------------- {{{
 let mapleader = "\<Space>"
