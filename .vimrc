@@ -26,7 +26,7 @@ else
     Plugin 'neomake/neomake'
     Plugin 'benjie/neomake-local-eslint.vim'
 endif
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
