@@ -145,6 +145,7 @@ iabbrev instuctor instructor
 iabbrev instuctors instructors
 " }}}
 
+set clipboard=unnamed
 set expandtab
 set smarttab
 set shiftwidth=4
