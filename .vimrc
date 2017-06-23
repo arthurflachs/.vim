@@ -127,6 +127,35 @@ hi IndentGuidesOdd ctermbg=black
 hi IndentGuidesEvent ctermbg=lightgrey
 " }}}
 
+" Nvim term settings ----------------- {{{
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+    tnoremap <M-h> <C-\><C-w>h
+    tnoremap <M-j> <C-\><C-w>j
+    tnoremap <M-k> <C-\><C-w>k
+    tnoremap <M-l> <C-\><C-w>l
+    nnoremap <M-h> <C-w>h
+    nnoremap <M-j> <C-w>j
+    nnoremap <M-k> <C-w>k
+    nnoremap <M-l> <C-w>l
+endif
+" }}}
+
+" Neomake settings ------------------- {{{
+if has('nvim')
+    let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+    let g:neomake_javascript_enabled_makers = ['eslint']
+    let g:neomake_javascript_eslint_exe = substitute(g:es_lint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+    autocmd! BufWritePost * Neomake
+    nnoremap <leader><leader> :ll<CR>
+    let g:neomake_open_list = 2
+    let g:neomake_place_signs = 1
+
+    let g:stylelint_path = system('PATH=$(npm bin):$PATH && which stylelint')
+    let g:neomake_css_enabled_makers = ['stylelint']
+    let g:neomake_css_stylelint_exe=substitute(g:stylelint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '/1', '')
+endif
+" }}}
 
 filetype plugin on
 filetype indent on
