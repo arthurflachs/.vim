@@ -52,6 +52,7 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'moll/vim-node'
 " }}}
 
 " Typescript plugins ----------------- {{{
