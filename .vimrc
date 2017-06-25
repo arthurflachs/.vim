@@ -22,9 +22,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 if !has('nvim')
     Plugin 'Valloric/YouCompleteMe'
 else
-    Plugin 'Shougo/deoplete.nvim'
+    Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plugin 'neomake/neomake'
     Plugin 'benjie/neomake-local-eslint.vim'
+    Plugin 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plugin 'hkupty/iron.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/syntastic'
@@ -33,6 +35,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-repeat'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'iCyMind/NeoSolarized'
+Plugin 'mhartington/oceanic-next'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -145,7 +149,7 @@ endif
 if has('nvim')
     let g:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
     let g:neomake_javascript_enabled_makers = ['eslint']
-    let g:neomake_javascript_eslint_exe = substitute(g:es_lint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+    let g:neomake_javascript_eslint_exe = substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
     autocmd! BufWritePost * Neomake
     nnoremap <leader><leader> :ll<CR>
     let g:neomake_open_list = 2
@@ -157,14 +161,21 @@ if has('nvim')
 endif
 " }}}
 
+let g:python_host_prog = '/Users/arthur/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/Users/arthur/.pyenv/versions/neovim3/bin/python'
+let g:deoplete#enable_at_startup = 1
+
 filetype plugin on
 filetype indent on
 
 set foldmethod=marker
 syntax enable
+set termguicolors
+set t_Co=256
 
 set background=dark
-colorscheme solarized
+colorscheme OceanicNext
+let g:airline_theme='oceanicnext'
 
 " Vim basic mappings ---------------------------- {{{
 let mapleader = "\<Space>"
