@@ -27,6 +27,7 @@ else
     Plugin 'benjie/neomake-local-eslint.vim'
     Plugin 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
     Plugin 'hkupty/iron.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plugin 'ervandew/supertab'
 endif
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/syntastic'
